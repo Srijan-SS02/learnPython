@@ -1,4 +1,3 @@
-
 light="salkjf"
 
 if light=="red":
@@ -8,5 +7,5 @@ elif light=='green':
     print('Go') 
 
 else:
-    print("get ready"
-
+    print("get ready")
+    
