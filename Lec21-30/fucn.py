@@ -9,3 +9,10 @@ first_func()
 first_func()
 
 
+def square(number):
+    s=number**2
+    return s
+
+
+result=square(7)
+print(result)
