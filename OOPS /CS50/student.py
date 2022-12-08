@@ -3,7 +3,6 @@ class Student:                                #Class is student
         
         self.name = name                        #these are instance variables  
         self.house =house
-        # self.patronus=patronus
 
     def __str__(self):
         return (f"{self.name} from {self.house}  " )
@@ -29,39 +28,16 @@ class Student:                                #Class is student
 
             self._house=house
 
-
-    # def charm(self):                                #Custom method
-    #     match self.patronus:
-    #         case "Stag":
-    #             return "🦌"    
-
-    #         case "Otter":
-    #             return "🦦"
-
-    #         case "Jack":
-    #             return "🐶"
-
-    #         case _:
-    #             return "⚔️"            
-
+    @classmethod
+    def get(cls):
+        name = input("Name: ")
+        house = input("House: ")
+        return cls(name, house)
 
 def main():
-    student = get_student()
+    student = Student.get()
     print(student)
-    # student.house="lksjfslfj"
-    # print("Expecto petronoum!")
-    # print (student.charm())
 
-
-
-
-def get_student():
-
-    name = input("Name: ")             #name, house and patronus are attributes of a class 
-    house= input("house: ")
-    # patronus = input("patronus: ")
-    student = Student(name, house)    #student is the object/Instance here of class Student 
-    return student 
 
     
 if __name__ == "__main__":
