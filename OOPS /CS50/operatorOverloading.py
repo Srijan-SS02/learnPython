@@ -18,7 +18,7 @@ class Vault:
 
 potter = Vault(100,50,25)
 print(potter)
-
+ 
 weasley = Vault(10,50,105)
 print(weasley)
 
